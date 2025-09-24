@@ -1,0 +1,56 @@
+{
+    "name": "Llama 3.1 8B Instruct",
+    "description": "Meta's 8B parameter instruction-tuned language model for efficient text generation",
+    "url": "https://www.ibm.com/products/watsonx-ai",
+    "provider": {
+      "organization": "Meta via IBM watsonx.ai",
+      "url": "https://www.ibm.com"
+    },
+    "version": "3.1",
+    "capabilities": {
+      "streaming": true,
+      "pushNotifications": false,
+      "stateTransitionHistory": false
+    },
+    "authentication": {
+      "schemes": ["Bearer"]
+    },
+    "defaultInputModes": ["text/plain"],
+    "defaultOutputModes": ["text/plain", "application/json"],
+    "skills": [
+      {
+        "id": "text-generation",
+        "name": "Text Generation",
+        "description": "Generate contextually relevant text based on input prompts",
+        "tags": ["text-generation", "conversation", "content-creation"],
+        "examples": [
+          "Write a short blog post about artificial intelligence",
+          "Create a product description for e-commerce",
+          "Generate social media content for a brand"
+        ]
+      },
+      {
+        "id": "answering",
+        "name": "Question Answering",
+        "description": "Provide accurate responses to factual and conceptual questions",
+        "tags": ["qa", "information-retrieval", "knowledge"],
+        "examples": [
+          "What are the main features of quantum computing?",
+          "Explain how neural networks work",
+          "What are the key events of World War II?"
+        ]
+      },
+      {
+        "id": "summarization",
+        "name": "Content Summarization",
+        "description": "Create concise summaries of longer texts",
+        "tags": ["summarization", "content-processing"],
+        "examples": [
+          "Summarize this article about renewable energy",
+          "Create a brief overview of this research paper",
+          "Provide key points from this product review"
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,56 @@
+{
+    "name": "Llama 3.2 1B Instruct",
+    "description": "Meta's compact 1B parameter instruction-tuned language model for efficient text generation",
+    "url": "https://www.ibm.com/products/watsonx-ai",
+    "provider": {
+      "organization": "Meta via IBM watsonx.ai",
+      "url": "https://www.ibm.com"
+    },
+    "version": "3.2",
+    "capabilities": {
+      "streaming": true,
+      "pushNotifications": false,
+      "stateTransitionHistory": false
+    },
+    "authentication": {
+      "schemes": ["Bearer"]
+    },
+    "defaultInputModes": ["text/plain"],
+    "defaultOutputModes": ["text/plain"],
+    "skills": [
+      {
+        "id": "text-generation",
+        "name": "Text Generation",
+        "description": "Generate contextually relevant text for simple tasks",
+        "tags": ["text-generation", "conversation", "lightweight"],
+        "examples": [
+          "Write a short email response",
+          "Create a brief product description",
+          "Generate a simple greeting message"
+        ]
+      },
+      {
+        "id": "answering",
+        "name": "Basic Question Answering",
+        "description": "Provide responses to straightforward questions",
+        "tags": ["qa", "information-retrieval", "basic-knowledge"],
+        "examples": [
+          "What is machine learning?",
+          "How does solar energy work?",
+          "What are the benefits of exercise?"
+        ]
+      },
+      {
+        "id": "simple-tasks",
+        "name": "Simple Instruction Following",
+        "description": "Complete straightforward tasks based on clear instructions",
+        "tags": ["instructions", "simple-tasks", "efficiency"],
+        "examples": [
+          "List five healthy breakfast ideas",
+          "Give me three tips for better sleep",
+          "Suggest ways to improve productivity"
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,46 @@
+{
+    "name": "Claude 3.5 Sonnet",
+    "description": "Anthropic's Claude 3.5 Sonnet model for advanced natural language understanding and generation",
+    "url": "https://aws.amazon.com/bedrock/claude/",
+    "provider": {
+      "organization": "Anthropic via AWS",
+      "url": "https://aws.amazon.com/bedrock/"
+    },
+    "version": "3.5",
+    "documentationUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-claude.html",
+    "capabilities": {
+      "streaming": true,
+      "pushNotifications": false,
+      "stateTransitionHistory": false
+    },
+    "authentication": {
+      "schemes": ["AWS Signature V4"]
+    },
+    "defaultInputModes": ["text/plain"],
+    "defaultOutputModes": ["text/plain", "application/json"],
+    "skills": [
+      {
+        "id": "text-generation",
+        "name": "Text Generation",
+        "description": "Generate coherent and contextually relevant text based on input prompts",
+        "tags": ["text-generation", "conversation", "content-creation"],
+        "examples": [
+          "Write a summary of quantum computing for beginners",
+          "Draft an email to reschedule a meeting",
+          "Create a product description for a new coffee maker"
+        ]
+      },
+      {
+        "id": "reasoning",
+        "name": "Complex Reasoning",
+        "description": "Solve complex problems requiring multi-step reasoning",
+        "tags": ["reasoning", "problem-solving", "analysis"],
+        "examples": [
+          "Analyze the pros and cons of renewable energy sources",
+          "Help me troubleshoot why my code isn't working",
+          "Explain the economic implications of raising interest rates"
+        ]
+      }
+    ]
+  }
+  

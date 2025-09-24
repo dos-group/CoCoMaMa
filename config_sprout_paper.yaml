@@ -1,0 +1,42 @@
+# Configuration for streaming contextual bandit experiments
+# This config is optimized for streaming algorithms
+
+# Problem model configuration
+PROBLEM_MODEL_TYPE: streaming_sprout  # Use SPROUT streaming dataset
+use_streaming_algorithms: true
+use_saved_data: false
+use_generated_workers_in_paper: false
+only_redo_plots: false
+plot: true
+
+# Results and output configuration
+RESULTS_DIR: "results/sprout_paper"
+
+# Embedding configuration
+embedding_config:
+  model_name: "all-MiniLM-L6-v2"
+  dimensions: 384
+  suffix: "_all-MiniLM-L6-v2_384-dim"
+
+# Experiment parameters
+num_times_to_run: 10
+num_rounds: 30000
+num_std_to_show: 5
+budgets: [1, 2, 3, 4]
+
+# Algorithm parameters
+v1: 2.2360679775  # sqrt(5)
+v2: 1
+rho: 0.9
+N: 2
+theta: 10.0  # multiplier for variance threshold in CoCoMaMa
+
+# Performance configuration
+num_threads_to_use: 10
+
+# Dataset configuration
+streaming_dataset_path: "datasets/sprout_streaming_30000.arrow"
+create_dataset_if_missing: true
+
+# Dataset paths for synthetic generation (if needed)
+sprout_streaming_path: "datasets/sprout_streaming_30000.arrow"

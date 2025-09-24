@@ -1,0 +1,80 @@
+{
+    "name": "Llama 3.3 70B Instruct",
+    "description": "Meta's 70B parameter model with enhanced capabilities for coding, reasoning, tool use, and general knowledge tasks",
+    "url": "https://www.ibm.com/products/watsonx-ai",
+    "provider": {
+      "organization": "Meta via IBM watsonx.ai",
+      "url": "https://www.ibm.com"
+    },
+    "version": "3.3",
+    "documentationUrl": "https://www.ibm.com/new/announcements/meta-s-new-llama-3-3-70b-instruct-model-now-available-on-watsonx-ai",
+    "capabilities": {
+      "streaming": true,
+      "pushNotifications": false,
+      "stateTransitionHistory": false
+    },
+    "authentication": {
+      "schemes": ["Bearer"]
+    },
+    "defaultInputModes": ["text/plain"],
+    "defaultOutputModes": ["text/plain", "application/json"],
+    "skills": [
+      {
+        "id": "coding",
+        "name": "Code Generation and Analysis",
+        "description": "Generate, analyze, and debug code across multiple programming languages",
+        "tags": ["coding", "programming", "development"],
+        "examples": [
+          "Write a Python script to analyze stock market data",
+          "Debug this JavaScript function and fix the errors",
+          "Create a machine learning model for image classification"
+        ]
+      },
+      {
+        "id": "reasoning",
+        "name": "Step-by-Step Reasoning",
+        "description": "Solve complex problems with detailed step-by-step reasoning",
+        "tags": ["reasoning", "problem-solving", "analysis"],
+        "examples": [
+          "Solve this physics problem showing all steps",
+          "Analyze this business case and provide recommendations",
+          "Walk through the solution to this complex algorithm"
+        ]
+      },
+      {
+        "id": "function-calling",
+        "name": "JSON Function Calling",
+        "description": "Generate structured JSON outputs for function calling and API integrations",
+        "tags": ["api", "structured-output", "tool-use"],
+        "examples": [
+          "Extract contact information from this email as JSON",
+          "Convert this product description into a structured format",
+          "Create a JSON schema for this database design"
+        ],
+        "outputModes": ["application/json", "text/plain"]
+      },
+      {
+        "id": "tool-use",
+        "name": "Tool Use",
+        "description": "Identify relevant tools and invoke them appropriately for specific tasks",
+        "tags": ["tool-use", "automation", "integration"],
+        "examples": [
+          "Search for recent papers on quantum computing",
+          "Calculate the compound interest on this investment",
+          "Convert this image to a different format"
+        ]
+      },
+      {
+        "id": "multilingual",
+        "name": "Multilingual Communication",
+        "description": "Generate and understand content in multiple languages",
+        "tags": ["multilingual", "translation", "localization"],
+        "examples": [
+          "Translate this technical document from English to Hindi",
+          "Write a marketing slogan in Thai",
+          "Summarize this German article in English"
+        ]
+      }
+    ]
+  }
+  

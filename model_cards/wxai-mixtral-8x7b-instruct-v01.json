@@ -1,0 +1,67 @@
+{
+    "name": "Mixtral 8x7B Instruct",
+    "description": "A mixture-of-experts model with 8 experts of 7B parameters each for high-quality text generation",
+    "url": "https://www.ibm.com/products/watsonx-ai",
+    "provider": {
+      "organization": "Mistral AI via IBM watsonx.ai",
+      "url": "https://www.ibm.com"
+    },
+    "version": "0.1",
+    "capabilities": {
+      "streaming": true,
+      "pushNotifications": false,
+      "stateTransitionHistory": false
+    },
+    "authentication": {
+      "schemes": ["Bearer"]
+    },
+    "defaultInputModes": ["text/plain"],
+    "defaultOutputModes": ["text/plain", "application/json"],
+    "skills": [
+      {
+        "id": "text-generation",
+        "name": "Text Generation",
+        "description": "Generate high-quality text across diverse domains and styles",
+        "tags": ["text-generation", "conversation", "content-creation"],
+        "examples": [
+          "Write a creative short story in the style of science fiction",
+          "Create a detailed business proposal for a tech startup",
+          "Generate an academic article on cognitive psychology"
+        ]
+      },
+      {
+        "id": "code-generation",
+        "name": "Code Generation",
+        "description": "Create code solutions for various programming tasks",
+        "tags": ["coding", "programming", "development"],
+        "examples": [
+          "Write a Python function for natural language processing",
+          "Create a React component with state management",
+          "Develop a machine learning model for time series prediction"
+        ]
+      },
+      {
+        "id": "reasoning",
+        "name": "Complex Reasoning",
+        "description": "Solve problems requiring logical reasoning and analysis",
+        "tags": ["reasoning", "problem-solving", "analysis"],
+        "examples": [
+          "Analyze the potential outcomes of this economic policy",
+          "Evaluate different approaches to solving this engineering challenge",
+          "Develop a strategy for optimizing this business process"
+        ]
+      },
+      {
+        "id": "knowledge",
+        "name": "Knowledge Access",
+        "description": "Provide accurate information across diverse domains",
+        "tags": ["knowledge", "information", "expertise"],
+        "examples": [
+          "Explain the fundamental principles of quantum mechanics",
+          "Provide detailed information about historical economic trends",
+          "Describe recent advancements in artificial intelligence"
+        ]
+      }
+    ]
+  }
+  

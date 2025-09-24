@@ -1,0 +1,71 @@
+{
+    "name": "GPT-4o",
+    "description": "OpenAI's versatile, high-intelligence flagship model that accepts both text and image inputs with a 128K context window",
+    "url": "https://platform.openai.com/docs/models/gpt-4o",
+    "provider": {
+      "organization": "OpenAI",
+      "url": "https://openai.com"
+    },
+    "version": "2024-11-20",
+    "documentationUrl": "https://platform.openai.com/docs/models/gpt-4o",
+    "capabilities": {
+      "streaming": true,
+      "pushNotifications": false,
+      "stateTransitionHistory": false
+    },
+    "authentication": {
+      "schemes": ["Bearer"]
+    },
+    "defaultInputModes": ["text/plain", "image/png", "image/jpeg"],
+    "defaultOutputModes": ["text/plain", "application/json"],
+    "skills": [
+      {
+        "id": "text-generation",
+        "name": "Text Generation",
+        "description": "Generate coherent and contextually relevant text based on input prompts",
+        "tags": ["text-generation", "conversation", "content-creation"],
+        "examples": [
+          "Write a poem about autumn leaves",
+          "Draft a business proposal for a startup",
+          "Create a detailed product description"
+        ]
+      },
+      {
+        "id": "image-understanding",
+        "name": "Image Understanding",
+        "description": "Analyze and interpret images to provide relevant information and insights",
+        "tags": ["vision", "image-analysis", "multimodal"],
+        "examples": [
+          "What's in this image?",
+          "Describe what you see in this chart",
+          "Help me understand what this diagram is showing"
+        ],
+        "inputModes": ["image/png", "image/jpeg", "text/plain"],
+        "outputModes": ["text/plain"]
+      },
+      {
+        "id": "function-calling",
+        "name": "Function Calling",
+        "description": "Generate structured JSON outputs for function calling and API integrations",
+        "tags": ["api", "structured-output", "tool-use"],
+        "examples": [
+          "Extract the contact information from this email",
+          "Convert this description into a JSON product specification",
+          "Parse this resume data into structured format"
+        ],
+        "outputModes": ["application/json", "text/plain"]
+      },
+      {
+        "id": "reasoning",
+        "name": "Complex Reasoning",
+        "description": "Handle complex problem-solving tasks requiring multi-step reasoning",
+        "tags": ["reasoning", "problem-solving", "analysis"],
+        "examples": [
+          "Solve this multi-step math problem",
+          "Help me debug this programming issue",
+          "Analyze the logical fallacies in this argument"
+        ]
+      }
+    ]
+  }
+  

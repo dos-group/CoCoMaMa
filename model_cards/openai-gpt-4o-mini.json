@@ -1,0 +1,47 @@
+{
+    "name": "GPT-4o mini",
+    "description": "A more efficient and cost-effective version of GPT-4o with similar capabilities",
+    "url": "https://platform.openai.com/docs/models",
+    "provider": {
+      "organization": "OpenAI",
+      "url": "https://openai.com"
+    },
+    "version": "1.0.0",
+    "capabilities": {
+      "streaming": true,
+      "pushNotifications": false,
+      "stateTransitionHistory": false
+    },
+    "authentication": {
+      "schemes": ["Bearer"]
+    },
+    "defaultInputModes": ["text/plain", "image/png", "image/jpeg"],
+    "defaultOutputModes": ["text/plain", "application/json"],
+    "skills": [
+      {
+        "id": "text-generation",
+        "name": "Text Generation",
+        "description": "Generate coherent and contextually relevant text based on input prompts",
+        "tags": ["text-generation", "conversation", "content-creation"],
+        "examples": [
+          "Write a short story about time travel",
+          "Draft an email to a colleague about project updates",
+          "Create a product description for an e-commerce site"
+        ]
+      },
+      {
+        "id": "image-understanding",
+        "name": "Image Understanding",
+        "description": "Analyze and interpret images to provide relevant information",
+        "tags": ["vision", "image-analysis", "multimodal"],
+        "examples": [
+          "What objects are in this image?",
+          "Describe what you see in this photo",
+          "What text is shown in this screenshot?"
+        ],
+        "inputModes": ["image/png", "image/jpeg", "text/plain"],
+        "outputModes": ["text/plain"]
+      }
+    ]
+  }
+  

@@ -1,0 +1,68 @@
+{
+    "name": "Granite 3 2B Instruct",
+    "description": "IBM's 2B parameter foundation model finetuned for instruction following with multilingual support",
+    "url": "https://www.ibm.com/products/watsonx-ai",
+    "provider": {
+      "organization": "IBM",
+      "url": "https://www.ibm.com"
+    },
+    "version": "3.0",
+    "documentationUrl": "https://www.ibm.com/docs/en/watsonx/w-and-w/2.1.0?topic=models-granite-30-2b-instruct-model-card",
+    "capabilities": {
+      "streaming": true,
+      "pushNotifications": false,
+      "stateTransitionHistory": false
+    },
+    "authentication": {
+      "schemes": ["Bearer"]
+    },
+    "defaultInputModes": ["text/plain"],
+    "defaultOutputModes": ["text/plain", "application/json"],
+    "skills": [
+      {
+        "id": "text-generation",
+        "name": "Text Generation",
+        "description": "Generate contextually relevant text in multiple languages",
+        "tags": ["text-generation", "multilingual", "content-creation"],
+        "examples": [
+          "Write a blog post about artificial intelligence",
+          "Create content for a product launch in Spanish",
+          "Draft an email response to a customer inquiry"
+        ]
+      },
+      {
+        "id": "summarization",
+        "name": "Content Summarization",
+        "description": "Create concise summaries of longer texts",
+        "tags": ["summarization", "content-processing"],
+        "examples": [
+          "Summarize this research paper",
+          "Create a brief overview of this meeting transcript",
+          "Provide key points from this news article"
+        ]
+      },
+      {
+        "id": "qa",
+        "name": "Question Answering",
+        "description": "Answer questions based on provided context or general knowledge",
+        "tags": ["question-answering", "information-retrieval"],
+        "examples": [
+          "What are the main causes of climate change?",
+          "Based on this document, what is the company's revenue target?",
+          "How does photosynthesis work?"
+        ]
+      },
+      {
+        "id": "code-tasks",
+        "name": "Code-Related Tasks",
+        "description": "Generate and explain code for various programming tasks",
+        "tags": ["coding", "programming", "development"],
+        "examples": [
+          "Write a Python function to calculate Fibonacci numbers",
+          "Explain this JavaScript code snippet",
+          "Create a SQL query to find the top customers by sales"
+        ]
+      }
+    ]
+  }
+  

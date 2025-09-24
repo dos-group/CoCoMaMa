@@ -1,0 +1,58 @@
+# Ablation study configuration for streaming Neural CoCoMaMa with varying theta values
+# This config will run the same algorithm multiple times with different parameter values
+
+# Problem model configuration
+PROBLEM_MODEL_TYPE: streaming_synthetic
+use_saved_data: false
+use_generated_workers_in_paper: false
+only_redo_plots: false
+
+# Results and output configuration
+RESULTS_DIR: results/synthetic_ablation_study_theta
+
+# Embedding configuration
+embedding_config:
+  model_name: "all-MiniLM-L6-v2"
+  dimensions: 50
+  suffix: "_all-MiniLM-L6-v2_50-dim"
+
+# Experiment parameters
+num_times_to_run: 10
+num_rounds: 30000
+num_std_to_show: 5
+budgets: [1,2,3,4]
+
+
+# Synthetic agents configuration
+synthetic_agents_config:
+  specialized_agent_interval: 200
+  expert_start_time: 2000
+  expert_strength_breakpoint: 6000
+  num_expert_dimensions: 5
+  num_task_fit_dimensions: 1
+
+# Performance configuration
+num_threads_to_use: 10
+
+# Dataset configuration
+# streaming_dataset_path: "datasets/sprout_streaming_3000.arrow"
+sprout_streaming_path: "datasets/sprout_streaming_30000.arrow"
+synthetic_dataset_path: "datasets/synthetic_streaming_50dim_30000rounds.arrow"
+create_dataset_if_missing: true
+
+# Ablation study configuration
+ablation_algorithm: "streaming_cocoma"  # Algorithm to test
+ablation_parameter: "theta"  # Parameter to vary
+ablation_values: [1.1, 1.5, 2.0, 4.0, 8.0]  # Values to test
+
+# Base configuration (shared across all runs)
+base_config:
+  v1: 1420  # sqrt(5)
+  v2: 1.0
+  rho: 0.5
+  N: 2
+  hidden_dim: 64
+
+# Plotting configuration
+plot: true
+use_streaming_algorithms: true

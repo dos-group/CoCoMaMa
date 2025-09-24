@@ -1,0 +1,80 @@
+{
+    "name": "Granite 3 8B Instruct",
+    "description": "IBM's 8B parameter foundation model finetuned for instruction following with multilingual support",
+    "url": "https://www.ibm.com/products/watsonx-ai",
+    "provider": {
+      "organization": "IBM",
+      "url": "https://www.ibm.com"
+    },
+    "version": "3.0",
+    "documentationUrl": "https://www.ibm.com/docs/en/watsonx/w-and-w/2.1.x?topic=models-granite-30-8b-instruct-model-card",
+    "capabilities": {
+      "streaming": true,
+      "pushNotifications": false,
+      "stateTransitionHistory": false
+    },
+    "authentication": {
+      "schemes": ["Bearer"]
+    },
+    "defaultInputModes": ["text/plain"],
+    "defaultOutputModes": ["text/plain", "application/json"],
+    "skills": [
+      {
+        "id": "text-generation",
+        "name": "Text Generation",
+        "description": "Generate contextually relevant text in multiple languages",
+        "tags": ["text-generation", "multilingual", "content-creation"],
+        "examples": [
+          "Write a detailed report on renewable energy trends",
+          "Create marketing content for a luxury product in French",
+          "Draft a comprehensive business proposal"
+        ]
+      },
+      {
+        "id": "summarization",
+        "name": "Content Summarization",
+        "description": "Create concise summaries of longer texts",
+        "tags": ["summarization", "content-processing"],
+        "examples": [
+          "Summarize this technical whitepaper",
+          "Create an executive summary of this quarterly report",
+          "Provide a concise overview of these research findings"
+        ]
+      },
+      {
+        "id": "qa",
+        "name": "Question Answering",
+        "description": "Answer questions based on provided context or general knowledge",
+        "tags": ["question-answering", "information-retrieval"],
+        "examples": [
+          "What are the implications of quantum computing for cryptography?",
+          "Based on this dataset, what trends can we identify?",
+          "How do central bank policies affect inflation rates?"
+        ]
+      },
+      {
+        "id": "code-tasks",
+        "name": "Code-Related Tasks",
+        "description": "Generate and explain code for various programming tasks",
+        "tags": ["coding", "programming", "development"],
+        "examples": [
+          "Create a RESTful API in Python using Flask",
+          "Write a React component for a data visualization dashboard",
+          "Develop a machine learning model for sentiment analysis"
+        ]
+      },
+      {
+        "id": "function-calling",
+        "name": "Function Calling",
+        "description": "Generate structured outputs for API integrations and tool use",
+        "tags": ["api", "structured-output", "tool-use"],
+        "examples": [
+          "Extract entities from this customer feedback",
+          "Convert this specification into a JSON schema",
+          "Parse this invoice data into a structured format"
+        ],
+        "outputModes": ["application/json", "text/plain"]
+      }
+    ]
+  }
+  

@@ -1,0 +1,68 @@
+{
+    "name": "Amazon Titan Text Premier",
+    "description": "Large language model for text generation with 32K context window for open-ended and context-based tasks",
+    "url": "https://aws.amazon.com/bedrock/titan/",
+    "provider": {
+      "organization": "Amazon Web Services",
+      "url": "https://aws.amazon.com/bedrock/"
+    },
+    "version": "v1:0",
+    "documentationUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/titan-text-models.html",
+    "capabilities": {
+      "streaming": true,
+      "pushNotifications": false,
+      "stateTransitionHistory": false
+    },
+    "authentication": {
+      "schemes": ["AWS Signature V4"]
+    },
+    "defaultInputModes": ["text/plain"],
+    "defaultOutputModes": ["text/plain", "application/json"],
+    "skills": [
+      {
+        "id": "text-generation",
+        "name": "Text Generation",
+        "description": "Generate coherent and contextually relevant text based on input prompts",
+        "tags": ["text-generation", "conversation", "content-creation"],
+        "examples": [
+          "Write a creative story about space exploration",
+          "Draft a professional email to a client",
+          "Generate a product description for marketing"
+        ]
+      },
+      {
+        "id": "summarization",
+        "name": "Content Summarization",
+        "description": "Create concise summaries of longer texts while preserving key information",
+        "tags": ["summarization", "content-processing"],
+        "examples": [
+          "Summarize this research paper on climate change",
+          "Create a brief summary of this meeting transcript",
+          "Provide a concise overview of this news article"
+        ]
+      },
+      {
+        "id": "code-generation",
+        "name": "Code Generation",
+        "description": "Generate code snippets and programming solutions",
+        "tags": ["coding", "programming", "development"],
+        "examples": [
+          "Write a Python function to sort a list",
+          "Create a JavaScript function to validate email addresses",
+          "Generate HTML/CSS for a responsive navbar"
+        ]
+      },
+      {
+        "id": "chain-of-thought",
+        "name": "Chain of Thought Reasoning",
+        "description": "Solve complex problems using step-by-step reasoning",
+        "tags": ["reasoning", "problem-solving", "analysis"],
+        "examples": [
+          "Solve this math word problem step by step",
+          "Explain the logical process to debug this code issue",
+          "Walk through the reasoning for this economic forecast"
+        ]
+      }
+    ]
+  }
+  

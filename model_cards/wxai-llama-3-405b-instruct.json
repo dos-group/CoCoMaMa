@@ -1,0 +1,67 @@
+{
+    "name": "Llama 3 405B Instruct",
+    "description": "Meta's massive 405B parameter instruction-tuned language model for advanced text generation and reasoning",
+    "url": "https://www.ibm.com/products/watsonx-ai",
+    "provider": {
+      "organization": "Meta via IBM watsonx.ai",
+      "url": "https://www.ibm.com"
+    },
+    "version": "3.0",
+    "capabilities": {
+      "streaming": true,
+      "pushNotifications": false,
+      "stateTransitionHistory": false
+    },
+    "authentication": {
+      "schemes": ["Bearer"]
+    },
+    "defaultInputModes": ["text/plain"],
+    "defaultOutputModes": ["text/plain", "application/json"],
+    "skills": [
+      {
+        "id": "advanced-text",
+        "name": "Advanced Text Generation",
+        "description": "Generate sophisticated and nuanced text content for complex tasks",
+        "tags": ["text-generation", "advanced-writing", "content-creation"],
+        "examples": [
+          "Write a detailed research proposal on quantum computing",
+          "Create a comprehensive business strategy document",
+          "Generate a technical white paper on renewable energy technologies"
+        ]
+      },
+      {
+        "id": "complex-reasoning",
+        "name": "Complex Reasoning",
+        "description": "Solve intricate problems requiring deep reasoning and analysis",
+        "tags": ["reasoning", "problem-solving", "advanced-analysis"],
+        "examples": [
+          "Analyze the global economic implications of this technological trend",
+          "Evaluate different approaches to this complex engineering challenge",
+          "Create a detailed risk assessment for this business venture"
+        ]
+      },
+      {
+        "id": "advanced-coding",
+        "name": "Advanced Code Generation",
+        "description": "Create sophisticated code solutions for complex programming tasks",
+        "tags": ["coding", "programming", "advanced-development"],
+        "examples": [
+          "Design a scalable microservices architecture",
+          "Create a machine learning pipeline for real-time data processing",
+          "Develop an optimized algorithm for this computational problem"
+        ]
+      },
+      {
+        "id": "expert-knowledge",
+        "name": "Expert Knowledge",
+        "description": "Provide deep domain expertise across various fields",
+        "tags": ["expertise", "specialized-knowledge", "domain-specific"],
+        "examples": [
+          "Explain the latest advancements in quantum field theory",
+          "Provide a detailed analysis of global economic trends",
+          "Discuss cutting-edge approaches in gene therapy research"
+        ]
+      }
+    ]
+  }
+  

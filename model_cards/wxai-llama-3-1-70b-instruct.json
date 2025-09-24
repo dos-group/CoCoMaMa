@@ -1,0 +1,56 @@
+{
+    "name": "Llama 3.1 70B Instruct",
+    "description": "Meta's 70B parameter instruction-tuned language model for text generation and conversation",
+    "url": "https://www.ibm.com/products/watsonx-ai",
+    "provider": {
+      "organization": "Meta via IBM watsonx.ai",
+      "url": "https://www.ibm.com"
+    },
+    "version": "3.1",
+    "capabilities": {
+      "streaming": true,
+      "pushNotifications": false,
+      "stateTransitionHistory": false
+    },
+    "authentication": {
+      "schemes": ["Bearer"]
+    },
+    "defaultInputModes": ["text/plain"],
+    "defaultOutputModes": ["text/plain", "application/json"],
+    "skills": [
+      {
+        "id": "text-generation",
+        "name": "Text Generation",
+        "description": "Generate contextually relevant text based on input prompts",
+        "tags": ["text-generation", "conversation", "content-creation"],
+        "examples": [
+          "Write an essay about climate change",
+          "Create a marketing email for a new product",
+          "Generate a creative story about space exploration"
+        ]
+      },
+      {
+        "id": "code-generation",
+        "name": "Code Generation",
+        "description": "Create code snippets and solutions for programming tasks",
+        "tags": ["coding", "programming", "development"],
+        "examples": [
+          "Write a Python function to analyze text sentiment",
+          "Create a React component for a login form",
+          "Generate SQL queries for database operations"
+        ]
+      },
+      {
+        "id": "reasoning",
+        "name": "Reasoning",
+        "description": "Solve problems requiring logical reasoning and analysis",
+        "tags": ["reasoning", "problem-solving", "analysis"],
+        "examples": [
+          "Analyze the economic impact of this policy change",
+          "Solve this mathematical optimization problem",
+          "Evaluate different approaches to this engineering challenge"
+        ]
+      }
+    ]
+  }
+  

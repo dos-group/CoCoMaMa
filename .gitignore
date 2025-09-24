@@ -1,0 +1,7 @@
+venv
+__pycache__
+*.pkl
+model_cache
+results/*
+cache
+datasets/*
